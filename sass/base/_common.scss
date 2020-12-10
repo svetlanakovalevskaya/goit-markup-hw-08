@@ -1,0 +1,29 @@
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features ul,
+.services ul,
+.team ul,
+.regular-customers ul {
+  display: flex;
+  justify-content: space-between;
+}

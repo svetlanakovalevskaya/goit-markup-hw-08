@@ -1,0 +1,11 @@
+.features {
+  background: $primaryColor;
+  font-family: $primaryFont;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  padding: 94px 0px;
+
+  &__title {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.address {
+  display: flex;
+  margin-left: auto;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.address__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $secondaryTextColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentElementColor;
+    outline-color: $accentElementColor;
+  }
+
+  &:hover .address__icon,
+  &:focus .address__icon {
+    fill: $accentElementColor;
+  }
+}
+
+.address__icon {
+  margin-right: 10px;
+  fill: $secondaryTextColor;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

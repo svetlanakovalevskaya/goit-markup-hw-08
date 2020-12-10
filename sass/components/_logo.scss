@@ -1,0 +1,24 @@
+.logo {
+  font-family: $secondaryFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $primaryTextColor;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--white {
+    color: $primaryColor;
+  }
+
+  &__part-web {
+    color: $accentElementColor;
+  }
+
+  &:focus {
+    outline-color: $accentElementColor;
+  }
+}
