@@ -1,0 +1,29 @@
+.page-hero {
+    height: 400px;
+    max-width: 1600px;
+    padding: 118px 0px;
+    font-family: $primaryFont;
+    font-style: normal;
+    text-align: center;
+    background-color: $secondaryColor;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-480.jpg);
+    background-size: cover;
+  
+    &__title {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: $primaryColor;
+      letter-spacing: 0.06em;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

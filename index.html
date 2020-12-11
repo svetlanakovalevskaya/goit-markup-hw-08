@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Создание сайтов для любого бизнеса">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio (Version 2.0)</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
@@ -15,24 +16,31 @@
       <div class="container header__container">
         <nav class="main-nav">
           <a href="index.html" class="logo"><span class="logo__part-web">Web</span>Studio</a>
-      
-          <ul class="page-navigation">
-            <li class="page-navigation__item"><a href="./index.html" class="page-navigation__link page-navigation__link--is-active">Студия</a></li>
-            <li class="page-navigation__item"><a href="./portfolio.html" class="page-navigation__link">Портфолио</a></li>
-            <li class="page-navigation__item"><a href="#contacts" class="page-navigation__link">Контакты</a></li>
-          </ul>
-        </nav>
+          <button type="button" class="mobmenu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="mobmenu-button_icon-close" href="./images/symbol-defs.svg#menu-close"></use>
+              <use class="mobmenu-button_icon-open" href="./images/symbol-defs.svg#menu-open"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="page-navigation">
+              <li class="page-navigation__item"><a href="./index.html" class="page-navigation__link page-navigation__link--is-active">Студия</a></li>
+              <li class="page-navigation__item"><a href="./portfolio.html" class="page-navigation__link">Портфолио</a></li>
+              <li class="page-navigation__item"><a href="#contacts" class="page-navigation__link">Контакты</a></li>
+            </ul>
 
-        <address class="address">
-          <a href="mailto:info@devstudio.com" class="address__link">
-            <svg class="address__icon" width="16" height="12">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-          <a href="tel:+380961111111" class="address__link">
-            <svg class="address__icon" width="16" height="12">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
-        </address>
+            <address class="address">
+              <a href="mailto:info@devstudio.com" class="address__link">
+                <svg class="address__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+              <a href="tel:+380961111111" class="address__link">
+                <svg class="address__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </address>
+          </div>
+        </nav>
       </div>
     </header>
     
@@ -431,5 +439,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
