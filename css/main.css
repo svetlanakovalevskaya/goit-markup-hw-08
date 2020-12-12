@@ -492,4 +492,126 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts-widget {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contacts-widget__list {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.contacts-widget__list--post-address {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.contacts-widget__link {
+  color: rgba(255, 255, 255, 0.6);
+  inline-size: 10px;
+}
+
+.contacts-widget__link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.social-networks-widget {
+  margin-bottom: 60px;
+}
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form-widget {
+  margin-left: auto;
+}
+
+.footer-title {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscribe-form__input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover, .subscribe-button:focus {
+  background-color: #ffffff;
+  color: #2196f3;
+}
+
+.subscribe-button:hover .subscribe-button__icon,
+.subscribe-button:focus .subscribe-button__icon {
+  fill: #2196f3;
+}
 /*# sourceMappingURL=main.css.map */

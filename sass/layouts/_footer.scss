@@ -1,0 +1,58 @@
+//#contacts {
+//    display: flex;
+//    align-items: baseline;
+//  }
+  
+.footer {
+  background: $secondaryColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+  
+// Contacts widget
+  
+.contacts-widget {
+  text-align: center;
+  margin-bottom: 60px;
+
+  &__list {
+    font-family: $primaryFont;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    &--post-address {
+      display: block;
+      color: $primaryColor;
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+  }
+  
+  &__link {
+    color: $footerContactColor;
+    inline-size: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.social-networks-widget {
+  margin-bottom: 60px;
+}
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+}
+  
+// Subscribe form widget
+  
+.subscribe-form-widget {
+  margin-left: auto;
+}
+  
