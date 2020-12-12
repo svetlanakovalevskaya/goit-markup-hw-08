@@ -1,0 +1,19 @@
+.portfolio-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $primaryColor;
+    font-family: $primaryFont;
+    font-style: normal;
+  }
+  
+  .nav-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .nav-projects > li:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  
