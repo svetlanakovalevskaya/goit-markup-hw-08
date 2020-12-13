@@ -20,6 +20,20 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .feature-card {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .feature-card:nth-child(n + 3) {
+    margin-top: 0px;
+  }
+}
+
 .feature-card::before {
     content: "";
     display: block;

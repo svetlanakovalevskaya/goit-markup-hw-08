@@ -8,6 +8,11 @@
     &__title {
       display: none;
     }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
 .features ul {
@@ -15,6 +20,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 0px;
   }
 }
   
