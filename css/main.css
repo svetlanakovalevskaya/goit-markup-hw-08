@@ -932,6 +932,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts-widget {
+    width: 231px;
     text-align: left;
     margin-right: 70px;
     margin-bottom: 0px;
@@ -1090,6 +1091,13 @@ img {
   font-style: normal;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .nav-projects {
   display: flex;
   flex-wrap: wrap;
@@ -1103,11 +1111,18 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .nav-projects {
+    margin-bottom: 50px;
+  }
+}
+
 .nav-projects > li:not(:last-child) {
   margin-right: 8px;
 }
 
 .nav-projects__button {
+  height: 38px;
   display: flex;
   flex-wrap: wrap;
   padding: 6px 22px;
@@ -1152,6 +1167,13 @@ img {
 @media screen and (min-width: 768px) {
   .project-card {
     width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-card {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    width: 370px;
   }
 }
 
