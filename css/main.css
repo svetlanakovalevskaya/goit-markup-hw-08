@@ -42,6 +42,10 @@ img {
   }
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 .mobmenu-button {
   display: inline-flex;
   width: 40px;

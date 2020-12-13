@@ -35,3 +35,7 @@ img {
     width: $desktop;
   }
 }
+
+.body.modal-open {
+  overflow: hidden;
+}
