@@ -1,5 +1,5 @@
 .menu-container {
-  z-index: 2;
+  z-index: 1;
   display: none;
   position: absolute;
   top: 100%;
@@ -39,6 +39,14 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+  }
+
+  &__item {
+    position: relative;
+  }
 }
 
 .page-navigation__item:not(:last-child) {
@@ -50,7 +58,6 @@
 }
   
 .page-navigation__link {
-  position: relative;
   display: inline-block;
   color: $primaryTextColor;  
   transition-duration: 250ms;
@@ -69,8 +76,9 @@
     opacity: 1;
 
     @media screen and (min-width: 768px) {
+      margin: 0px;
       position: absolute;
-      transform: translateY(10px);
+      bottom: -20px;
     }
   }
   

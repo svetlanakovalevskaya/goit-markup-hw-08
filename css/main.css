@@ -107,8 +107,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
 .menu-container {
-  z-index: 2;
+  z-index: 1;
   display: none;
   position: absolute;
   top: 100%;
@@ -154,6 +162,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-navigation {
+    margin: 0px;
+  }
+}
+
+.page-navigation__item {
+  position: relative;
+}
+
 .page-navigation__item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -165,7 +183,6 @@ img {
 }
 
 .page-navigation__link {
-  position: relative;
   display: inline-block;
   color: #212121;
   transition-duration: 250ms;
@@ -187,8 +204,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .page-navigation__link--is-active::after {
+    margin: 0px;
     position: absolute;
-    transform: translateY(10px);
+    bottom: -20px;
   }
 }
 
@@ -235,12 +253,39 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .address {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
 .address__link {
   display: flex;
+  justify-content: center;
   text-align: center;
   color: #757575;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .address__link {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__link {
+    align-items: center;
+  }
 }
 
 .address__link:not(:last-child) {
@@ -250,6 +295,12 @@ img {
 @media screen and (min-width: 768px) {
   .address__link:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__link:not(:last-child) {
+    margin: 0px 30px 0px 0px;
   }
 }
 
@@ -271,9 +322,29 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .address__icon {
+  .adress__icon--envelop-768 {
     width: 14px;
-    margin-right: 8px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress__icon--envelop-768 {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adress__icon--smartphone-768 {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress__icon--smartphone-768 {
+    height: 16px;
   }
 }
 
