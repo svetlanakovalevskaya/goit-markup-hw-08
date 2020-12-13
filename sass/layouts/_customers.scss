@@ -1,12 +1,21 @@
 .regular-customers {
-    padding: 60px 0px;
-    background-color: $primaryColor;
+  padding: 60px 0px;
+  background-color: $primaryColor;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
   }
+}
 
 .regular-customers ul {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
 }
   
 .customer-card {
@@ -46,6 +55,12 @@
   }
 }
   
+@media screen and (min-width: 768px) {
+  .customer-card:nth-child(n + 4) {
+    margin-top: 0px;
+  }
+}
+
 .customer-card__link {
   display: flex;
   justify-content: center;

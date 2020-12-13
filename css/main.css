@@ -769,10 +769,23 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .regular-customers {
+    padding: 94px 0px;
+  }
+}
+
 .regular-customers ul {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers ul {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
 }
 
 .customer-card {
@@ -812,6 +825,12 @@ img {
 @media screen and (min-width: 768px) {
   .customer-card:nth-child(n + 4) {
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-card:nth-child(n + 4) {
+    margin-top: 0px;
   }
 }
 
