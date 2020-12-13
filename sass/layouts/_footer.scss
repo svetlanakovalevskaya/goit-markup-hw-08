@@ -1,14 +1,23 @@
-//#contacts {
-//    display: flex;
-//    align-items: baseline;
-//  }
+@media screen and (min-width: 1200px) {
+  #contacts {
+    display: flex;
+    align-items: baseline;
+  }
+}
   
 .footer {
   background: $secondaryColor;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-  
+
+@media screen and (min-width: 768px) {
+  .contacts-socnet-widget {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 // Contacts widget
   
 .contacts-widget {
@@ -38,6 +47,10 @@
     &:not(:last-child) {
       margin-bottom: 8px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
   }
 }
 

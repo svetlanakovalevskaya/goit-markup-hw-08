@@ -102,12 +102,6 @@ img {
   outline-color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -157,7 +151,7 @@ img {
   .page-navigation {
     display: flex;
     align-items: center;
-    margin: 0px 84px 0px 0px;
+    margin: 0px 84px 0px 88px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -774,10 +768,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  #contacts {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-socnet-widget {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts-widget {
@@ -808,6 +816,12 @@ img {
 
 .contacts-widget__link:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-widget {
+    margin-right: 165px;
+  }
 }
 
 .social-networks-widget {
@@ -854,6 +868,15 @@ img {
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 450px;
+  }
 }
 
 .subscribe-button {
