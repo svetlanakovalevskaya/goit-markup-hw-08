@@ -2,7 +2,7 @@
   font-family: $secondaryFont;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: $primaryTextColor;
@@ -20,6 +20,10 @@
   
   &:focus {
     outline-color: $accentElementColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
   }
 }
   

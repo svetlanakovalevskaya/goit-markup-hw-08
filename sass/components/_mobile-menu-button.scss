@@ -5,6 +5,10 @@
     padding: 0px;
     border: none;
     background-color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
 }
 
 .mobmenu-button_icon-close {
