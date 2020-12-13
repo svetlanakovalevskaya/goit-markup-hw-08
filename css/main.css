@@ -783,6 +783,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .regular-customers ul {
+    justify-content: space-between;
     flex-wrap: nowrap;
     margin-right: 0px;
   }
@@ -808,6 +809,12 @@ img {
   margin-right: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .customer-card:nth-child(2n + 1) {
+    margin-right: 0px;
+  }
+}
+
 .customer-card:nth-child(n + 3) {
   margin-top: 30px;
 }
@@ -820,6 +827,13 @@ img {
 
 .customer-card:hover, .customer-card:focus {
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-card {
+    width: 170px;
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
