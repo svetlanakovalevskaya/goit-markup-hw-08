@@ -842,7 +842,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .customer-card:nth-child(n + 4) {
     margin-top: 0px;
   }
@@ -867,13 +867,6 @@ img {
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 1200px) {
-  #contacts {
-    display: flex;
-    align-items: baseline;
-  }
 }
 
 .footer {
@@ -910,6 +903,12 @@ img {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-widget__list--post-address {
+    margin-bottom: 9px;
+  }
+}
+
 .contacts-widget__link {
   color: rgba(255, 255, 255, 0.6);
   inline-size: 10px;
@@ -919,14 +918,35 @@ img {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-widget__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-widget {
     margin-right: 165px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-widget {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
+}
+
 .social-networks-widget {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-networks-widget {
+    margin-bottom: 0px;
+    margin-right: 93px;
+  }
 }
 
 .social-networks-list {
@@ -935,7 +955,21 @@ img {
 }
 
 .subscribe-form-widget {
+  display: block;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form-widget {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #contacts {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .footer-title {
@@ -951,6 +985,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    text-align: left;
+  }
 }
 
 .subscribe-form__input {
@@ -977,6 +1017,21 @@ img {
     left: 50%;
     transform: translate(-50%);
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+    margin-bottom: 0px;
+    left: 0px;
+    transform: translate(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: inline-flex;
   }
 }
 
@@ -1018,6 +1073,13 @@ img {
 .subscribe-button:hover .subscribe-button__icon,
 .subscribe-button:focus .subscribe-button__icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-button {
+    left: 12px;
+    transform: translate(0%);
+  }
 }
 
 .portfolio-page {

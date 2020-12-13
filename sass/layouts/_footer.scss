@@ -1,10 +1,3 @@
-@media screen and (min-width: 1200px) {
-  #contacts {
-    display: flex;
-    align-items: baseline;
-  }
-}
-  
 .footer {
   background: $secondaryColor;
   padding-top: 60px;
@@ -37,6 +30,10 @@
       color: $primaryColor;
       margin-bottom: 8px;
       margin-top: 20px;
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
     }
   }
   
@@ -46,16 +43,31 @@
 
     &:not(:last-child) {
       margin-bottom: 8px;
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
     }
   }
 
   @media screen and (min-width: 768px) {
     margin-right: 165px;
   }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
 }
 
 .social-networks-widget {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-right: 93px;
+  }
 }
 
 .social-networks-list {
@@ -66,6 +78,17 @@
 // Subscribe form widget
   
 .subscribe-form-widget {
+  display: block;
   margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
-  
+
+@media screen and (min-width: 1200px) {
+  #contacts {
+    display: flex;
+    align-items: flex-start;
+  }
+}

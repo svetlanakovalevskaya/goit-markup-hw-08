@@ -11,4 +11,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $primaryColor;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
