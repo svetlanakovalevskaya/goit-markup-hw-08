@@ -620,10 +620,23 @@ img {
   padding: 60px 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0px;
+  }
+}
+
 .team ul {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team ul {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
 }
 
 .employee-card {
@@ -683,6 +696,15 @@ img {
   }
   .employee-card:nth-child(2n + 1) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employee-card:not(:last-child) {
+    margin-right: 30px;
+  }
+  .employee-card:nth-child(n + 3) {
+    margin-top: 0px;
   }
 }
 

@@ -1,12 +1,21 @@
 .team {
   background: $accentBgColor;
   padding: 60px 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 
 .team ul {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
 }
   
 .employee-card {
@@ -66,4 +75,13 @@
     margin-right: 30px;
   }
 }
-  
+
+@media screen and (min-width: 1200px) {
+  .employee-card:not(:last-child) {
+      margin-right: 30px;
+  }
+
+  .employee-card:nth-child(n + 3) {
+    margin-top: 0px;
+  }
+}
