@@ -16,6 +16,11 @@
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin-right: 30px;
+  }
   
   &:nth-child(2n + 1) {
     margin-right: 30px;
@@ -23,11 +28,21 @@
 
   &:nth-child(n + 3) {
     margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
   }
 
   &:hover,
   &:focus {
     border-color: $accentElementColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-card:nth-child(n + 4) {
+    margin-top: 30px;
   }
 }
   

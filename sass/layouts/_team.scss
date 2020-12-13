@@ -2,6 +2,12 @@
   background: $accentBgColor;
   padding: 60px 0px;
 }
+
+.team ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
   
 .employee-card {
   background: $primaryColor;
@@ -16,10 +22,20 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
   }
 
   &__thumb {
     padding: 30px 0px;
+  }
+
+  &__thumb ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   &__title {
@@ -34,6 +50,20 @@
     color: $secondaryTextColor;
     margin-top: 0px;
     margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .employee-card:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+
+  .employee-card:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
   
