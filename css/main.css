@@ -1101,6 +1101,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -1108,6 +1109,12 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 93px 15px;
   overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 208px auto;
+  }
 }
 
 .is-hidden {
