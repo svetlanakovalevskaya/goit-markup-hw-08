@@ -578,6 +578,19 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .service-card {
   position: relative;
 }
@@ -684,6 +697,12 @@ img {
   color: #212121;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-titles {
+    margin-bottom: 50px;
+  }
 }
 
 .social-network {

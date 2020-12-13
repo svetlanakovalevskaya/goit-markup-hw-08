@@ -2,6 +2,17 @@
   display: none;
   background: $primaryColor;
   padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.services ul {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .service-card {
