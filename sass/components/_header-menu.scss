@@ -78,7 +78,11 @@
     @media screen and (min-width: 768px) {
       margin: 0px;
       position: absolute;
-      bottom: -20px;
+      bottom: -32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      bottom: -33px;
     }
   }
   

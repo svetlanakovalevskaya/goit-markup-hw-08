@@ -28,6 +28,7 @@ img {
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
+    overflow: visible;
   }
 
   @media screen and (min-width: $desktop) {

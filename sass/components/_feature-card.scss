@@ -1,5 +1,23 @@
 .feature-card:not(:last-child) {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-card {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  .feature-card:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+
+  .feature-card:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 .feature-card::before {
