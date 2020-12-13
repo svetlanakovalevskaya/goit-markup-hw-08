@@ -12,6 +12,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: $primaryColor;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 528px;
+    }
   }
   
   .is-hidden .modal {
