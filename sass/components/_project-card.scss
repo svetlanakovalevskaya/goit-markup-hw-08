@@ -1,20 +1,32 @@
 .project-card {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    align-content: stretch;
-    background: $primaryColor;
-    box-sizing: border-box;
-    width: 100%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  align-content: stretch;
+  background: $primaryColor;
+  box-sizing: border-box;
+  width: 100%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
   
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+}
+
+@media screen and (min-width: 768px) {
+  .projects-cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
   }
-  
+}
+
   .project-card__link {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -91,6 +103,12 @@
     color: $primaryTextColor;
     margin-top: 0px;
     margin-bottom: 5px;
+
+    @media screen and (min-width: 768px) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
   
   .project-card__type {
