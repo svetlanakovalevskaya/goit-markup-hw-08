@@ -567,6 +567,12 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .feature-card__title {
+    text-align: left;
+  }
+}
+
 .feature-card__text {
   font-weight: normal;
   font-size: 14px;
@@ -728,6 +734,8 @@ img {
 @media screen and (min-width: 1200px) {
   .section-titles {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
